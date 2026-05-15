@@ -1,23 +1,33 @@
 [gd_scene format=3 uid="uid://5weim62m8ok8"]
 
 [ext_resource type="PackedScene" uid="uid://ca8v8iah0h54a" path="res://scenes/Player.tscn" id="1_6ovph"]
-[ext_resource type="Texture2D" uid="uid://bb6dsdw6xtasg" path="res://assets/Base pack/Tiles/grass.png" id="2_bwv4p"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_odhdn"]
-size = Vector2(156.5, 150.5)
+[ext_resource type="PackedScene" uid="uid://dckmfx1bfx57a" path="res://scenes/tile.tscn" id="2_bwv4p"]
 
 [node name="Level1" type="Node2D" unique_id=1342446220]
 
 [node name="Player" parent="." unique_id=1576235905 instance=ExtResource("1_6ovph")]
-position = Vector2(0, 5)
+position = Vector2(-535.99994, 158.99998)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=691449622]
+[node name="Tile5" parent="." unique_id=2081587396 instance=ExtResource("2_bwv4p")]
+position = Vector2(90, 270)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=457598106]
-position = Vector2(5.5000076, 132)
-scale = Vector2(2.2428575, 2.142857)
-texture = ExtResource("2_bwv4p")
+[node name="Tile6" parent="." unique_id=1589296717 instance=ExtResource("2_bwv4p")]
+position = Vector2(247, 270)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1148749183]
-position = Vector2(5.2500076, 132.25)
-shape = SubResource("RectangleShape2D_odhdn")
+[node name="Tile7" parent="." unique_id=196599132 instance=ExtResource("2_bwv4p")]
+position = Vector2(404, 270)
+
+[node name="Tile8" parent="." unique_id=1594103506 instance=ExtResource("2_bwv4p")]
+position = Vector2(561, 270)
+
+[node name="Tile" parent="." unique_id=334880189 instance=ExtResource("2_bwv4p")]
+position = Vector2(-538, 270)
+
+[node name="Tile2" parent="." unique_id=328838977 instance=ExtResource("2_bwv4p")]
+position = Vector2(-381, 270)
+
+[node name="Tile3" parent="." unique_id=1306441828 instance=ExtResource("2_bwv4p")]
+position = Vector2(-224, 270)
+
+[node name="Tile4" parent="." unique_id=871865644 instance=ExtResource("2_bwv4p")]
+position = Vector2(-67, 270)
