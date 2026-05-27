@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c4nhgj5x1hvmc"]
+
+[ext_resource type="Texture2D" uid="uid://brx54png2vioj" path="res://assets/Base pack/Tiles/castle.png" id="1_6nkom"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6nkom"]
+size = Vector2(209, 70)
+
+[node name="Plataforma" type="AnimatableBody2D" unique_id=1338962504]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=254447423]
+position = Vector2(69.5, 0)
+shape = SubResource("RectangleShape2D_6nkom")
+
+[node name="Plataforma" type="Node2D" parent="." unique_id=395802573]
+
+[node name="Sprite2D3" type="Sprite2D" parent="Plataforma" unique_id=1951389506]
+position = Vector2(140, 0)
+texture = ExtResource("1_6nkom")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Plataforma" unique_id=1190778098]
+position = Vector2(70, 0)
+texture = ExtResource("1_6nkom")
+
+[node name="Sprite2D" type="Sprite2D" parent="Plataforma" unique_id=1567257182]
+texture = ExtResource("1_6nkom")
